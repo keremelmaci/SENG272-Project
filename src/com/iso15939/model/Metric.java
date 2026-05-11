@@ -46,10 +46,6 @@ public class Metric extends NamedElement {
         return formatNumber(min) + "–" + formatNumber(max);
     }
 
-    /**
-     * ISO 15939 assignment score formula.
-     * The final result is clamped to 1.0-5.0 and rounded to the nearest 0.5.
-     */
     public double calculateScore() {
         double normalized;
         if (max == min) {
