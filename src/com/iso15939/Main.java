@@ -11,7 +11,7 @@ public class Main {
             try {
                 UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
             } catch (Exception ignored) {
-                // If the system look and feel is not available, Swing will use the default one.
+                
             }
             new MainFrame().setVisible(true);
         });
